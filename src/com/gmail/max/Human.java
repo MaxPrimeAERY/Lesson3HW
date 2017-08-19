@@ -5,44 +5,19 @@ package com.gmail.max;
  */
 public class Human {
 
-    private int age;
-    private double weight;
-    private boolean sex;
     private String name;
+    private String lastname;
+    private int age;
+    private boolean sex;
 
-    public Human(int age, double weight, boolean sex, String name) {
-        this.age = age;
-        this.weight = weight;
-        this.sex = sex;
+    public Human(String name, String lastname, int age, boolean sex) {
         this.name = name;
+        this.lastname = lastname;
+        this.age = age;
+        this.sex = sex;
     }
 
     public Human() {
-        super();
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public double getWeight() {
-        return weight;
-    }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
-    }
-
-    public boolean isSex() {
-        return sex;
-    }
-
-    public void setSex(boolean sex) {
-        this.sex = sex;
     }
 
     public String getName() {
@@ -53,13 +28,37 @@ public class Human {
         this.name = name;
     }
 
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public boolean isSex() {
+        return sex;
+    }
+
+    public void setSex(boolean sex) {
+        this.sex = sex;
+    }
+
     @Override
     public String toString() {
         return "Human{" +
-                "age=" + age +
-                ", weight=" + weight +
+                "name='" + name + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", age=" + age +
                 ", sex=" + sex +
-                ", name='" + name + '\'' +
                 '}';
     }
 }
